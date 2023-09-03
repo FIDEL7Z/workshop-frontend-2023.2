@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll(".carousel-slide img");
 
     let idx = 0;
-    const interval = 2000; // Intervalo de 2 segundos entre cada imagem
+    const interval = 2000; 
 
     function carrossel() {
         images[idx].classList.remove("active"); // Remove a classe "active" da imagem atual
@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", function() {
             idx = 0;
         }
 
-        images[idx].classList.add("active"); // Adiciona a classe "active" à próxima imagem
+        images[idx].classList.add("active"); 
 
-        // Chama a função carrossel novamente após o intervalo especificado
+        
         setTimeout(carrossel, interval);
     }
 
-    // Iniciar o carrossel
+    
     carrossel();
 });
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
