@@ -1,0 +1,300 @@
+body {
+    background-image: url('/img/ceu-estrelado.gif');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+   
+}
+
+
+ 
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ddff00;
+}
+
+@font-face {
+    font-family: 'Starjhol';
+    src: url('caminho-para-a-fonte/Starjhol.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title {
+    font-family: 'Starjhol', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+   
+}
+
+.star-wars-info {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffd700;
+    text-align: justify;
+    font-size: 1.2em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    border-bottom: 2px solid #ffd700;
+    font-family: 'Starjhol', sans-serif;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+.image-right {
+    margin-left: auto;
+    display: block;
+}
+
+.carousel-container {
+    width: 60%;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 4px 4px 4px #ddff00;
+    border-radius: 10px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.carousel-slide img.active {
+    opacity: 1;
+}
+
+
+.CURIOSITIES {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffd700;
+    text-align: center;
+    font-size: 1.2em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    border-bottom: 2px solid #ffd700;
+    font-family: 'NomeDaFonte', sans-serif;
+    margin: 0 auto;
+}
+
+.curiosity {
+    display: inline-block;
+    width: 40%;
+    margin: 20px;
+    padding: 10px;
+    background-color: black;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+}
+
+.curiosity img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.curiosity p {
+    padding: 10px;
+    color: #ffd700;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.image-left {
+    float: left;
+    margin-right: 20px;
+    max-width: 40%;
+    height: auto;
+}
+.image-container {
+    float: right;
+    width: 100%;
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+  
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    font-size: 40px;
+    animation: colorBlink 2s infinite;
+}
+
+@keyframes colorBlink {
+    0% {
+        color: #ff0000;
+    }
+    25% {
+        color: #00ff00;
+    }
+    50% {
+        color: #0000ff;
+    }
+    75% {
+        color: #ffff00;
+    }
+    100% {
+        color: #ff00ff;
+    }
+}
+@keyframes textAnimation {
+    0% {
+        color: #ddff00;
+    }
+    50% {
+        color: #ff00dd;
+    }
+    100% {
+        color: #ddff00;
+    }
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blink {
+    animation: textAnimation 2s linear infinite;
+}
+
+
+
+@font-face {
+    font-family: 'Star Wars Font';
+    src: url('Starjhol.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Star Wars Font', Arial, sans-serif;
+}
+
+header a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+.quadrado {
+    
+    width: 50px;
+    height: 50px;
+    animation: go-back 1s infinite alternate;
+  }
+
+  @keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact-info h3 {
+    font-size: 1.2em;
+}
+
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #ffd700;
+    margin: 0 10px;
+}
+
+
+.copyright {
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}
+
+
