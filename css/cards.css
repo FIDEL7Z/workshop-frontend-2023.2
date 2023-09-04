@@ -5,8 +5,9 @@
     text-align: center;
     display: inline-block;
     margin-right: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: yellow   ;
+    box-shadow: 0px 2px 5px rgb(251, 255, 0);
     margin-bottom: 10px;
     margin-left: 40px; 
 }
@@ -17,14 +18,14 @@
     font-family: 'Arial', sans-serif;
     font-size: 1em; 
     margin-bottom: 5px;
-    color: #333;
+    color: #f6ff00;
 }
 
 
 .character-card p {
     font-family: 'Arial', sans-serif;
     font-size: 0.9em;
-    color: #555;
+    color: #ddff00;
     margin: 3px 0;
 }
 
